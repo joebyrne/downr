@@ -1,0 +1,27 @@
+﻿@page "{slug?}" 
+@model IndexModel 
+@{ ViewData["IndexModel"] = Model; }
+
+<div class="ui raised segment">
+    <div class="ui raised segments">
+        <div class="ui blue inverted segment">
+            <h1>@Model.Post.Title</h1>
+        </div>
+        <div class="ui horizontal secondary segments">
+            <div class="ui segment">
+                <a class="ui left floated green button" href="/@Model.Post.Slug">
+                <i class="calendar outline icon"></i>
+                @Model.Post.LastModified.ToString("M")
+                </a>
+                @foreach(var tag in @Model.Post.Categories) 
+                {
+                <a href="/categories/@tag.Trim()" class="ui right floated green button">
+                @tag
+                <i class="right chevron icon"></i>
+                </a>
+                }
+            </div>
+        </div>
+    </div>
+    @Html.Raw(Model.Post.Content)
+</div>

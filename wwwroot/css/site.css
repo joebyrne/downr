@@ -1,0 +1,61 @@
+body, .description {
+    font-family: 'Average', 'Segoe UI Light', 'Arial',' Helvetica', sans-serif;
+}
+
+h1, h2, h3, h4, h5, .ui.footer.segment {
+    font-family: 'Cabin','Segoe UI Light','Arial','Helvetica',sans-serif;
+}
+
+code, pre {
+    -webkit-font-smoothing: auto;
+    background-color: #E3E2D0;
+    padding: 2px;
+    font-size: .90em;
+}
+
+body {
+    background-color: gainsboro;
+    /*
+    background-image: url('/images/studio.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    */
+}
+
+.ui.raised.segment {
+    font-size: 1.3em;
+}
+
+.ui.menu .item img.logo {
+    margin-right: 1.5em;
+}
+
+.main.container {
+    margin-top: 2em;
+}
+
+.wireframe {
+    margin-top: 2em;
+}
+
+.ui.footer.segment {
+    margin: 5em 0em 0em;
+    padding: 5em 0em;
+    background-color: rgb(243, 243, 236);
+}
+
+.label {
+    font-family: 'Cabin','Segoe UI Light','Arial','Helvetica',sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.not-active {
+    pointer-events: none;
+    cursor: default;
+    text-decoration:none;
+    color:black;
+  }

@@ -1,0 +1,18 @@
+﻿@page "{category?}" 
+@model CategoriesModel
+
+<div class="ui raised segment">
+    <div class="ui raised segments">
+        <div class="ui blue inverted segment">
+            <h1>@Model.Posts.Length Posts tagged with @Model.Category</h1>
+        </div>
+        @foreach(downr.Models.Post post in Model.Posts)
+        {
+            <div class="ui raised segment">
+                <a href="/@post.Slug">
+                <h3>@post.Title</h3>
+                </a>
+            </div>
+        }
+    </div>
+</div>

@@ -1,0 +1,7 @@
+﻿@using downr.Models;
+
+@{
+    ViewData["Title"] = (ViewData["IndexModel"] == null) ? "" : ": " + (ViewData["IndexModel"] as IndexModel).Post.Title;
+}
+
+<title>bradygaster.com @ViewData["Title"]</title>

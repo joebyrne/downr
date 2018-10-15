@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> @Html.Partial("Header", ViewData)
+    <link rel="stylesheet" type="text/css" href="~/semantic/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="~/css/site.css">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Average">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Cabin">
+</head>
+
+<body>
+
+    <!-- top -->
+    @Html.Partial("Navigation", ViewData)
+    <!-- /top -->
+
+    <!-- main -->
+    <div class="ui main grid container">
+        <div class="twelve wide column">
+            @RenderBody()
+        </div>
+        <div class="four wide column">
+            @Html.Partial("Rail", ViewData)
+        </div>
+    </div>
+    <!-- /main -->
+
+    <!-- footer -->
+    @Html.Partial("Footer", ViewData)
+    <!-- /footer -->
+
+    <!-- script files --> 
+    @Html.Partial("GlobalScripts", ViewData)
+    @RenderSection("Scripts", required: false)
+    <!-- /script files --> 
+</body>
+
+</html>
