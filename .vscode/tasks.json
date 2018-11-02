@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/downrv2.csproj"
+                "${workspaceFolder}/downr.csproj"
             ],
             "problemMatcher": "$msCompile"
         }

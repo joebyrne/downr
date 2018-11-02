@@ -7,7 +7,7 @@ using downr.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace downrv2
+namespace downr
 {
     public class IndexModel : PageModel
     {
